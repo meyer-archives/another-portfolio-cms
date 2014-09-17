@@ -1,0 +1,313 @@
+/* @override http://cooper.local:5555/admin/style.css */
+
+/* @override http://local.cassialeidigh.com/admin/style.css */
+
+/* @override http://cassialeidigh.com/admin/style.css */
+
+/* @group Reset CSS */
+
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+input{
+	margin: 0;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* @end */
+
+body{
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+#login-form{
+	width: 300px;
+	background: #f0f2f2;
+	padding: 23px 20px;
+	border: 1px solid #e3e5e5;
+}
+
+#login-form h3{
+	
+}
+
+form ul{
+	margin: 10px 0;
+}
+
+form ul li{
+	margin-bottom: 5px;
+}
+
+form ul li input{
+	padding: 4px;
+	font-size: 16px;
+}
+
+form ul li label{
+	display: block;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+#container{
+	width: 800px;
+	margin: 30px 0 30px 30px;
+}
+
+ul#project-list li.project{
+	overflow: hidden;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #f2f4f4;
+	-webkit-border-radius: 5px;
+	border: 2px solid #EEE;
+}
+
+ul#project-list li.project h2{
+	height: 30px;
+	line-height: 30px;
+	font-size: 24px;
+	letter-spacing: -1px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 1px;
+}
+
+li.project li.item h3.item-title{
+
+}
+
+li.project li.item p.item-desc{
+	top: 10px;
+}
+
+li.project li.item{
+	display: block;
+	float: left;
+	position: relative;
+	text-align: center;
+	width: 130px;
+	height: 175px;
+	background-color: #333;
+}
+
+li.project li.item-placeholder{
+	display: block;
+	float: left;
+	width: 130px;
+	height: 175px;
+	background-color: #FFF;
+}
+
+li.project .ui-sortable  li.item{
+	opacity: .8;
+}
+
+li.project li.item h3{
+	font-size: 12px;
+	width: 110px;
+	margin: 5px auto;
+	color: #fffeff;
+	text-shadow: #000 0 2px 1px;
+	line-height: 14px;
+}
+
+div.item-thumbnail{
+	position: relative;
+	margin: 0 auto;
+	width: 110px;
+	height: 120px;
+}
+
+div.item-thumbnail div.thumbnail-inner{
+	width: 100px;
+	height: 100px;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-color: #EEE;
+	position: absolute;
+	bottom: 2px;
+	left: 5px;
+}
+
+div.item-thumbnail:hover div.thumbnail-inner{
+	background-position: 0 -100px;
+}
+
+div.item-thumbnail:hover ul.item-options{
+	display: block;
+}
+
+div.item-thumbnail ul.item-options{
+	display: none;
+}
+
+div.item-thumbnail ul.item-options{
+	background: url(../includes/thumbnail-active-options.png) no-repeat 3px 1px;
+	display: none;
+	width: 110px;
+	height: 120px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-transform: uppercase;
+}
+
+li.project ul.item-options li{
+	font-size: 12px;
+	height: 15px;
+	width: 15px;
+	position: absolute;
+}
+
+li.project ul.item-options li a{
+	text-decoration: none;
+	display: block;
+	width: 15px;
+	height: 15px;
+	overflow: hidden;
+	text-indent: -10000px;
+}
+
+li.project ul.item-options li.edit{
+	top: 3px;
+	right: 22px;
+}
+
+li.project ul.item-options li.delete{
+	top: 3px;
+	right: 6px;
+}
+
+li.project ul.item-options li.edit a{
+	background: url(../includes/close-edit.gif) no-repeat -15px -15px;
+}
+
+li.project ul.item-options li.delete a{
+	background: url(../includes/close-edit.gif) no-repeat 0 -15px;
+}
+
+li.project ul.item-options li.edit a:hover{
+	background-position: -15px 0;
+}
+li.project ul.item-options li.delete a:hover{
+	background-position: 0 0;
+}
+
+ul#project-list li#add-project{
+	background: #FFF;
+	border: 2px solid #ebeded;
+	padding: 10px;
+}
+
+li#add-project input{
+	width: 250px;
+	border: 0px;
+	border-bottom: 1px solid #d5d5d5;
+	font: bold 24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	padding: 2px 0;
+	margin: 0;
+	letter-spacing: -1px;
+	height: 30px;
+}
+
+button{
+	background: url(images/button.gif) 0 top;
+	border: 1px solid #d8dada;
+	-webkit-border-radius: 5px 3px;
+	border-bottom: 1px solid #c7c7c7;
+	display: inline-block;
+	color: #353535;
+	text-shadow: #FFF 0 1px 0;
+	padding: 0 10px;
+	font: bold 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	margin-right: 0;
+	margin-top: 0;
+	margin-left: 0;
+	height: 25px;
+}
+
+li#add-project button{
+	position: relative;
+	top: -4px;
+}
+
+button:active{
+	background-position: 0 bottom;
+	border: 1px solid #b3b3b3;
+}
+
+ul.item-list{
+	overflow: hidden;
+	background: #333;
+}
+
+div.item-add{
+	background-color: #fffeff;
+	padding: 10px;
+	margin-top: 5px;
+}
+
+div.item-add form{
+	display: inline-block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 7px 9px;
+	background-color: #f7f7f7;
+}
+
+div.item-add h4{
+	height: 20px;
+	line-height: 20px;
+}
